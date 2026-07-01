@@ -88,3 +88,45 @@ const user1 = {
 }
 
 const city = user1.address.city;
+
+
+
+// Function in JS
+function sum(a, b) {
+  return a + b;
+}
+
+function multiply(a, b) {
+  return a * b;
+}
+
+function subtract(a, b) {
+  return a - b;
+}
+
+function divide(a, b) {
+  return a / b;
+}
+
+function doOperation(a, b, op) {
+  return op(a, b)
+}
+
+console.log(doOperation(1, 2, sum))
+
+
+// CallBack in JS 
+const fs = require("fs");
+
+fs.readFile("a.txt", "utf-8", function (err, contents) {
+  console.log(contents);
+});
+
+
+//SetTimeout
+function run() {
+	console.log("I will run after 1s");
+}
+
+setTimeout(run, 1000);
+console.log("I will run immedietely");
